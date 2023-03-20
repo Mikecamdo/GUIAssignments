@@ -1,0 +1,218 @@
+/*Wildcard Selector*/
+* {
+  background: beige;
+  box-sizing: border-box;
+}
+
+/*Element Selectors*/
+li {
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  color: darkblue;
+}
+
+th,
+td {
+  border: solid darkblue;
+  padding: 0.4rem, 0.6rem;
+}
+
+footer {
+  text-align: center;
+}
+
+img {
+  height: 10em;
+  width: 5em;
+  float: right;
+}
+
+/*ID Selectors*/
+#websiteTitle {
+  color: salmon;
+  text-align: center;
+}
+
+#contactForm {
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+#introduction {
+  position: relative;
+  font-size: 1.5em;
+  clear: right;
+}
+
+#pixelArt {
+  text-align: center;
+}
+
+#hat {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border: .2em solid black;
+  background-color: black;
+  width: 20em;
+  height: 5em;
+  z-index: 1;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+
+#face {
+  position: relative;
+  margin: auto;
+  width: 25em;
+  height: 25em;
+  border: 0.2em solid black;
+  background-color: RGB(238, 187, 153);
+  border-radius: 100%;
+  z-index: 0;
+}
+
+#leftEye {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  top: 6em;
+  left: 6em;
+  border: 0.2em solid black;
+  background-color: white;
+}
+
+#leftPupil {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  bottom: 0em;
+  right: 1em;
+  background-color: black;
+}
+
+#rightEye {
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  top: 6em;
+  right: 6em;
+  border: 0.2em solid black;
+  background-color: white;
+}
+
+#rightPupil {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  bottom: 0em;
+  left: 1em;
+  background-color: black;
+}
+
+#nose {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  top: 11.5em;
+  left: 11.5em;
+  border: 0.2em solid black;
+  background-color: RGB(238, 187, 153);
+}
+
+#mouth {
+  position: absolute;
+  width: 8em;
+  height: 2em;
+  bottom: 4em;
+  left: 8.5em;
+  border: 0.2em solid black;
+  background-color: RGB(235, 181, 184);
+}
+
+#lipLine {
+  position: absolute;
+  border-top: .2em solid black;
+  width: 7.6em;
+  height: 1em;
+  bottom: 0em;
+  right: 0em;
+  background-color: RGB(235, 181, 184);
+}
+
+#bowlingStory {
+  overflow: scroll;
+  height: 15em;
+  margin: auto;
+}
+
+#message {
+  height: 20em;
+  width: 30em;
+}
+
+#funFactsHeader {
+  color: darkblue;
+}
+
+#tableHeader {
+  text-align: center;
+  color: darkblue;
+}
+
+/*Class Selectors*/
+.aList {
+  color: darkblue;
+  text-align: center;
+}
+
+.hobbies {
+  display: inline;
+}
+
+/*Attribute Selectors*/
+a[href] {
+  color: black;
+}
+
+button[type] {
+  background-color: white;
+}
+
+/*Pseudo-Class Selectors*/
+button:hover {
+  color: blue;
+}
+
+a:hover {
+  color: blue;
+}
+
+#face:hover {
+  opacity: 0.0;
+}
+
+/*Any Selectors*/
+.bodyHeaders,
+.listHeaders {
+  text-align: center;
+}
+
+/*All Selectors*/
+h1.bodyHeaders {
+  color: firebrick;
+}
+
+/*Contextual Selectors*/
+footer p {
+  color: red;
+}

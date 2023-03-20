@@ -1,0 +1,236 @@
+/*Wildcard Selector*/
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', serif;
+}
+
+/*Element Selectors*/
+body {
+    margin: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 7em;
+    font-size: .9em;
+    margin: 0;
+}
+
+/*ID Selectors*/
+#title {
+    font-weight: bold;
+    margin-top: .9em;
+    margin-bottom: .4em;
+    margin-left: .7em;
+    font-size: 1.5em;
+}
+
+#appointmentNotes {
+    color: gray;
+}
+
+#message {
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+#newAppointment {
+    font-weight: bold;
+    margin-top: .9em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+/*Class Selectors*/
+.profileCard {
+    float: left;
+    clear: right;
+    width: 45em;
+    border: .05em solid gray;
+    margin: .6em 0em .6em 1em;
+    height: 10em;
+}
+
+/*Header Selector*/
+header > h1 {
+    margin:0;
+    padding: 1em .5em;
+}
+
+/*Main Selectors*/
+main section:not(.active) {
+    display: none;
+}
+
+main section.active {
+    display: block;
+}
+
+/*Profile Card Selectors*/
+.profileCard > img {
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: 1em;
+    height: 9em;
+    width: 10em;
+    float: left;
+}
+
+.profileCard > h2 {
+    font-size: 2em;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+
+.profileCard > p {
+    margin: 0;
+}
+
+.profileCard > p > span {
+    background: lightgray;
+    border-radius: 1em;
+    padding: .5em 1em;
+    margin: .1em;
+    font-size: .8em;
+}
+
+.profileCard > button {
+    float: right;
+    margin: .3em;
+    background: #569b84;
+    color: white;
+    border: none;
+    border-radius: .5em;
+    font-size: 1.3em;
+    height: 2.4em;
+    width: 9em;
+}
+
+.profileCard > button:hover {
+    background: #5597ae;
+}
+
+/*Calendar View Selectors*/
+#calendarView > h2 {
+    margin-left: .7em;
+    text-transform: uppercase;
+}
+
+#calendarView > table > tbody > tr > td > span {
+    padding-left: .8em;
+}
+
+#calendarView > table > thead {
+    background: #999999;
+    color: white;
+    height: 3em;
+    text-align: left;
+}
+
+#calendarView > table > thead > tr > th {
+    padding-left: .8em;
+}
+
+#calendarView > table > tbody > tr > td > button {
+    background: #569b84;
+    color: white;
+    border: none;
+    border-radius: .5em;
+    font-size: 1.1em;
+    height: 2.7em;
+    width: 10.4em;
+    margin-left: .8em;
+}
+
+#calendarView > table > tbody > tr > td > button:hover {
+    background: #5597ae;
+}
+
+#calendarView > table {
+    margin-left: 1em;
+    margin-bottom: .5em;
+    width: 97%;
+    height: 22em;
+    border-bottom: solid gray;
+    border-width: .05em;
+}
+
+#calendarView > button {
+    background: #889daf;
+    color: white;
+    border: none;
+    border-radius: .5em;
+    font-size: 1.1em;
+    height: 2.3em;
+    width: 8em;
+    margin-left: 1em;
+}
+
+#calendarView > button:hover {
+    background: #5597ae;
+}
+
+#Monday > span,
+#Tuesday > span,
+#Wednesday > span,
+#Thursday > span{
+    display: block;
+}
+
+/*Appointment View Selectors*/
+#appointmentView {
+    margin-left: 1em;
+
+}
+
+#name {
+    height: 3em;
+}
+
+#notes {
+    height: 18em;
+}
+
+#name,
+#notes {
+    width: 99%;
+    border: .05em solid gray;
+}
+
+#cancel {
+    width: 97%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: none;
+    color: white;
+    background: #889daf;
+}
+
+#book {
+    width: 97%;
+    border: none;
+    color: white;
+    background: #569b84;
+}
+
+#cancel,
+#book {
+    height: 2.8em;
+    border-radius: .5em;
+    font-size: 1em;
+}
+
+#cancel:hover,
+#book:hover {
+    background: #5597ae;
+}
+
+#appointmentView > form {
+    color: gray;
+}
+
+#name:focus,
+#notes:focus {
+    box-shadow: indianred;
+}
